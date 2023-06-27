@@ -236,3 +236,48 @@
 .list_aside > *:not(:last-child) {
     margin-bottom: 24px;
 }
+
+.about {
+    background: #f8f9f8;
+    padding: 24px;
+}
+
+.about_title {
+    color: #212121;
+    font-weight:500 ;
+    font-size: 20px;
+}
+
+.about_text {
+    color: #212121;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.link_list {
+    padding: 24px;
+}
+
+.link_title {
+    display: block;
+    color: #212121;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.link_list > *:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.link_item {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0050ff;
+    display: block;
+}
+
+.link_item:hover {
+    text-decoration: underline;
+}
