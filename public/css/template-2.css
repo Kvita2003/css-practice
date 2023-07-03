@@ -219,7 +219,7 @@
 
 .post_info {
     color: #999;
-    font-weight: 400;
+    font-weight: var(--weight-text);
     font-size: 16px;
 }
 
@@ -228,7 +228,7 @@
 }
 
 .post_description {
-    font-weight: 400;
+    font-weight: var(--weight-text);
     font-size: 16px;
     color: #212121;
 }
@@ -250,7 +250,7 @@
 
 .about_text {
     color: #212121;
-    font-weight: 400;
+    font-weight: var(--weight-text);
     font-size: 14px;
     line-height: 170%;
 }
@@ -272,7 +272,7 @@
 
 .link_item {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--weight-text);
     text-decoration: none;
     color: #0050ff;
     display: block;
@@ -280,4 +280,20 @@
 
 .link_item:hover {
     text-decoration: underline;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    height: 800px;
+    border: 1px solid red;
+}
+
+.flex-item {
+    width: 200px;
+    background: grey;
+    margin: 15px;
 }
