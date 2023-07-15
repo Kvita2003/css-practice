@@ -19,11 +19,43 @@
         <h1 class="hero_title">{{title}}</h1>
         <p class="hero_text">{{text}}</p>
       </div>
+      <div class="hero_slider">
+        <div class="hero_slider_icon hero_slider_left">{{left}}</div>
       <img src="{{photo}}" alt="Hero image" class="hero_image">
+      <div class="hero_slider_icon hero_slider_right">{{right}}</div>
+      </div>
     </div>
     {{/with}}
+
+    <div class="model">
+      <img src="{{hero.photo}}" alt="Hero image" class="model_image">
+      <div class="model_text">
+      {{hero.text}}
+      </div>
+    </div>
    
     <main class="blog">
+      {{#each blog}}
+      <div class="card">
+        <div class="card_image" style="background-image: url({{img}})"></div>
+        <h2 class="card_title">{{title}}</h2>
+        <p class="card_text">{{text}}</p>
+        <a class="button card_button" href="{{href}}">{{button}}</a>
+      </div>
+      
+        {{/each}}
+    </main>
+     <main class="blog">
+      {{#each blog}}
+      <div class="card">
+        <div class="card_image" style="background-image: url({{img}})"></div>
+        <h2 class="card_title">{{title}}</h2>
+        <p class="card_text">{{text}}</p>
+        <a class="button card_button" href="{{href}}">{{button}}</a>
+      </div>
+      
+        {{/each}}
+    </main> <main class="blog">
       {{#each blog}}
       <div class="card">
         <div class="card_image" style="background-image: url({{img}})"></div>
