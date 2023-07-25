@@ -1,0 +1,55 @@
+<div class="header">
+    {{>logo}}
+          <nav class="nav">
+            {{#with header}}
+            {{#each links}}
+      <a href="{{url}}" class="header_link">{{text}}</a>
+    {{/each}}
+          {{/with}}
+          </nav>
+</div>
+
+<div class="information">
+  {{#with header}}
+  <span class="span">Ad</span>
+    {{#with ad}}
+      <a href="{{url}}" class="ad">{{text}}</a>
+    {{/with}}
+    <div class="user">Users online:{{userOnline}}</div>
+  {{/with}}
+</div>
+
+  <div class="hero">
+    <h1 class="hero_title">{{hero.title}}</h1>
+    <p class="hero_description">{{hero.description}}</p>
+    <a class="button hero_button" href="{{hero.button.url}}">
+      {{hero.button.text}}</a>
+    </div>
+
+<div class="about">
+  <h1 class="about_heading">{{about.heading}}</h1>
+  <p class="about_info">{{about.info}}</p>
+</div>
+
+<div class="articles">
+  {{#each articles}}
+      <div class="card">
+        <img class="card_img" src="{{photo}}" id="{{id}}">
+        
+        {{#if isNew includeZero=true}}
+        <span class="product">NEW</span>
+        {{/if}}
+        <h2 class="card_heading">{{name}}</h2>
+        <p class="card_info">{{description}}</p>
+      </div>
+  {{/each}}
+</div>
+
+<div class="footer">
+  {{#with footer}}
+    <span class="footer_copyright">{{copyright}}</span>
+    {{#each pages}}
+      <a href="{{path}}" class="footer_path"> {{name}} </a>
+    {{/each}}
+  {{/with}}
+</div>
